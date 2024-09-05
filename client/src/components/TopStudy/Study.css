@@ -1,0 +1,82 @@
+.study-text {
+    text-align: center; /* Centers text inside the container */
+    max-width: 1000px; /* Limits the width of the text container */
+    margin: 0 auto; /* Centers the container horizontally */
+    padding: 40px 20px; /* Adds padding for better spacing inside the container */
+}
+
+.study-text h1 {
+    font-size: 40px; /* Font size for the heading */
+    font-weight: 600; /* Bold font weight */
+    color: rgb(118, 98, 204); /* Custom color for the heading */
+    margin-top: 40px; /* Space above the heading */
+    margin-bottom: 30px; /* Space below the heading */
+}
+
+.study-text p {
+    font-size: 30px; /* Font size for the paragraph */
+    line-height: 1.6; /* Increases line height for better readability */
+    color: #333; /* Darker color for better contrast and readability */
+    margin-top: 20px; /* Space above the paragraph */
+    margin-bottom: 40px; /* Space below the paragraph */
+    max-width: 800px; /* Limits the width of the paragraph */
+    text-align: center; /* Centers the text inside the paragraph */
+    padding: 0 10px; /* Adds horizontal padding for better spacing on small screens */
+    display: inline-block; /* Ensures the paragraph is treated as an inline block to respect the max-width */
+}
+/* Grid layout for programs */
+.programs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Creates three equal columns */
+    gap: 20px; /* Space between grid items */
+    margin: 0 auto;
+    max-width: 1200px; /* Optional: Adjust based on your design */
+}
+
+/* Styling for individual program containers */
+.program {
+    position: relative; /* Set position relative to position caption absolutely within it */
+    overflow: hidden; /* Ensure that overflow from caption is hidden */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+/* Styling for images inside program containers */
+.program img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    max-width: 100%; /* Ensure images do not exceed container width */
+    border-radius: 10px;
+    display: block; /* Ensure the image is a block element to avoid inline spacing issues */
+    transition: filter 0.3s ease; /* Smooth transition for the blur effect */
+}
+
+/* Styling for caption overlay */
+.caption {
+    position: absolute; /* Position caption absolutely within .program container */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust for centering */
+    color: white; /* White text color for contrast */
+    text-align: center; /* Center text inside the caption */
+    padding: 10px; /* Padding for some space around the text */
+    border-radius: 10px; /* Rounded corners for a softer look */
+    width: 80%; /* Adjust width as needed */
+    opacity: 0; /* Initially hide the caption */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transition for caption visibility and positioning */
+}
+
+/* Show caption and blur image on hover */
+.program:hover img {
+    filter: blur(2px); /* Apply blur effect to the image */
+}
+
+.program:hover .caption {
+    opacity: 1; /* Show the caption */
+    transform: translate(-50%, -50%) scale(1.1); /* Optional: Slightly scale up the caption to make it pop */
+}
+
+.caption p {
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+}
