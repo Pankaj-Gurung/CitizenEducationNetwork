@@ -1,3 +1,4 @@
+/* General styles for study-text */
 .study-text {
     text-align: center; /* Centers text inside the container */
     max-width: 1000px; /* Limits the width of the text container */
@@ -24,6 +25,7 @@
     padding: 0 10px; /* Adds horizontal padding for better spacing on small screens */
     display: inline-block; /* Ensures the paragraph is treated as an inline block to respect the max-width */
 }
+
 /* Grid layout for programs */
 .programs {
     display: grid;
@@ -79,4 +81,56 @@
     font-size: 30px;
     color: white;
     font-weight: bold;
+}
+
+/* Media Queries */
+
+/* Adjustments for tablets and smaller screens */
+@media (max-width: 1000px) {
+    .study-text h1 {
+        font-size: 35px; /* Slightly smaller heading font size */
+    }
+
+    .study-text p {
+        font-size: 24px; /* Slightly smaller paragraph font size */
+    }
+
+    .programs {
+        grid-template-columns: repeat(2, 1fr); /* Two columns layout for tablets */
+    }
+}
+
+/* Adjustments for mobile screens */
+@media (max-width: 768px) {
+    .study-text h1 {
+        font-size: 30px; /* Smaller heading font size */
+    }
+
+    .study-text p {
+        font-size: 20px; /* Smaller paragraph font size */
+        padding: 0 5px; /* Reduced horizontal padding for small screens */
+    }
+
+    .programs {
+        grid-template-columns: 1fr; /* Single column layout for mobile */
+    }
+
+    .caption p {
+        font-size: 24px; /* Smaller font size for the caption on mobile */
+    }
+}
+
+/* Additional adjustments for very small screens (optional) */
+@media (max-width: 480px) {
+    .study-text h1 {
+        font-size: 25px; /* Further reduce heading font size */
+    }
+
+    .study-text p {
+        font-size: 18px; /* Further reduce paragraph font size */
+    }
+
+    .caption p {
+        font-size: 20px; /* Further reduce caption font size */
+    }
 }

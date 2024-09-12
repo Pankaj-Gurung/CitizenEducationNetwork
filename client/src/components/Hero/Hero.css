@@ -1,28 +1,46 @@
-.hero{
+@keyframes slideBackground {
+    0% {
+        background-image: url('../../assets/hero.jpg');
+    }
+    50% {
+        background-image: url('../../assets/hero2.jpg'); 
+    }
+    100% {
+        background-image: url('../../assets/hero.jpg');
+    }
+}
+
+.hero {
     width: 100%;
     min-height: 100vh;
-    background: url('../../assets/hero.jpg');
-    background-size: 100%;
+    background-size: cover; /* Use 'cover' to make sure the image covers the element */
     background-position: center;
     background-repeat: no-repeat;
     display: flex;
     align-items: center;
-    
+    animation: slideBackground 15s infinite; 
+    /* Add padding and box-sizing to ensure content fits well */
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 
-.hero-text{
+.hero-text {
     text-align: left;
     max-width: 800px;
+    width: 100%;
+    /* Add some padding to the text container for better spacing */
+    padding: 20px;
 }
 
-.hero-text h1{
+.hero-text h1 {
     font-size: 60px;
     font-weight: 600;
+    margin-bottom: 30px;
     color: white;
 }
 
-.butn{
-    background:rgb(123, 247, 210);
+.butn {
+    background: rgb(123, 247, 210);
     color: rgb(65, 0, 243);
     font-weight: 600;
     padding: 14px 25px;
@@ -31,4 +49,40 @@
     cursor: pointer;
     border: 0;
     outline: 0;
+    /* Add a transition for a smoother hover effect */
+    transition: background-color 0.3s ease;
+}
+
+.butn:hover {
+    background-color: rgb(100, 220, 190); /* Lighter shade on hover */
+}
+
+/* Media Queries for Mobile Devices */
+@media (max-width: 768px) {
+    .hero-text {
+        text-align: center;
+        padding: 10px;
+    }
+
+    .hero-text h1 {
+        font-size: 40px; /* Smaller font size for smaller screens */
+        margin-bottom: 20px;
+    }
+
+    .butn {
+        padding: 10px 20px; /* Adjust button padding for mobile screens */
+        font-size: 14px; /* Slightly smaller font size */
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-text h1 {
+        font-size: 30px; /* Further decrease font size for very small screens */
+        margin-bottom: 15px;
+    }
+
+    .butn {
+        padding: 8px 15px; /* Adjust button padding for very small screens */
+        font-size: 12px; /* Even smaller font size */
+    }
 }

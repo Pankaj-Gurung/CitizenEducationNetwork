@@ -32,3 +32,56 @@ nav ul li:hover {
     padding-left: 10%;
     padding-right:10%;
 }
+
+.menu-icon{
+    display: none;
+}
+
+@media (max-width: 1000px){
+    .logo{
+        width: 140px;
+        display: none;
+    }
+    nav ul li{
+        margin: 10px 15px;
+    }
+
+    @media (max-width: 840px){
+        nav{
+            padding: 15px 0;
+        }
+        nav ul{
+            position: fixed;
+            top: 0;
+            right: 0px;
+            bottom: 0;
+            background: #384e4b83;
+            z-index: -1;
+            width: 200px;
+            padding-top:70px ;
+            transition: 0.5px;
+        }
+
+        nav ul li{
+            display: block;
+            margin: 25px 40px;
+        }
+        .menu-icon{
+            display: block;
+            width: 30px;
+            cursor: pointer;
+        }
+
+        .hide-mobile-menu{
+            right: -200px;
+            
+        }
+
+        nav ul li .btn {
+            padding: 10px 20px; 
+            font-size: 14px; 
+        }
+    }
+
+    
+}
