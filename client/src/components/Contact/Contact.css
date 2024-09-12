@@ -4,13 +4,13 @@
     display: flex;
     align-content: center;
     justify-content: space-between;
-    flex-wrap: wrap; /* Added to handle wrapping on smaller screens */
+    flex-wrap: wrap; 
 }
 
 .contact-col {
     flex-basis: 48%;
     color: #676767;
-    margin-bottom: 20px; /* Ensure spacing between columns on smaller screens */
+    margin-bottom: 20px;
 }
 
 .contact-col h3 {
@@ -29,11 +29,11 @@
 
 .contact-col p {
     max-width: 450px;
-    list-style: none; /* Fixed typo: should be 'none' not '0.3' */
+    list-style: none; 
 }
 
 .contact-col ul {
-    padding: 0; /* Remove default padding */
+    padding: 0;
 }
 
 .contact-col ul li {
@@ -69,7 +69,7 @@
     margin: 20px 0;
 }
 
-/* Media query for tablets and smaller screens */
+
 @media (max-width: 768px) {
     .contact {
         flex-direction: column;
@@ -79,11 +79,11 @@
 
     .contact-col {
         flex-basis: 100%;
-        margin-bottom: 30px; /* Ensure more spacing between columns on smaller screens */
+        margin-bottom: 30px;
     }
 
     .contact-col h3 {
-        font-size: 22px; /* Adjust font size for better readability */
+        font-size: 22px;
     }
 
     .contact-col h3 img {
@@ -95,7 +95,7 @@
     }
 
     .contact-col ul li {
-        margin: 15px 0; /* Reduce margin for smaller screens */
+        margin: 15px 0; 
     }
 
     .contact-col ul li img {
@@ -107,7 +107,7 @@
     }
 
     .contact-col span {
-        margin: 15px 0; /* Adjust margin for smaller screens */
+        margin: 15px 0; 
     }
 
     .contact form input, .contact form textarea {
@@ -115,7 +115,7 @@
     }
 }
 
-/* Media query for mobile devices */
+
 @media (max-width: 480px) {
     .contact {
         padding: 0 10px;

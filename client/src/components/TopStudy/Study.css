@@ -1,80 +1,73 @@
 /* General styles for study-text */
 .study-text {
-    text-align: center; /* Centers text inside the container */
-    max-width: 1000px; /* Limits the width of the text container */
-    margin: 0 auto; /* Centers the container horizontally */
-    padding: 40px 20px; /* Adds padding for better spacing inside the container */
+    text-align: center; 
+    max-width: 1000px; 
+    margin: 0 auto; 
+    padding: 40px 20px; 
 }
 
 .study-text h1 {
-    font-size: 40px; /* Font size for the heading */
-    font-weight: 600; /* Bold font weight */
-    color: rgb(118, 98, 204); /* Custom color for the heading */
-    margin-top: 40px; /* Space above the heading */
-    margin-bottom: 30px; /* Space below the heading */
+    font-size: 40px;
+    font-weight: 600;
+    color: rgb(118, 98, 204);
+    margin-top: 40px; 
+    margin-bottom: 30px; 
 }
 
 .study-text p {
-    font-size: 30px; /* Font size for the paragraph */
-    line-height: 1.6; /* Increases line height for better readability */
-    color: #333; /* Darker color for better contrast and readability */
-    margin-top: 20px; /* Space above the paragraph */
-    margin-bottom: 40px; /* Space below the paragraph */
-    max-width: 800px; /* Limits the width of the paragraph */
-    text-align: center; /* Centers the text inside the paragraph */
-    padding: 0 10px; /* Adds horizontal padding for better spacing on small screens */
-    display: inline-block; /* Ensures the paragraph is treated as an inline block to respect the max-width */
+    font-size: 30px; 
+    line-height: 1.6; 
+    color: #333; 
+    margin-top: 20px; 
+    text-align: center; 
+    display: inline-block;
 }
 
-/* Grid layout for programs */
 .programs {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Creates three equal columns */
-    gap: 20px; /* Space between grid items */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px; 
     margin: 0 auto;
-    max-width: 1200px; /* Optional: Adjust based on your design */
+    max-width: 1200px; 
 }
 
-/* Styling for individual program containers */
 .program {
-    position: relative; /* Set position relative to position caption absolutely within it */
-    overflow: hidden; /* Ensure that overflow from caption is hidden */
-    transition: all 0.3s ease; /* Smooth transition for hover effects */
+    position: relative; 
+    overflow: hidden; 
+    transition: all 0.3s ease; 
 }
 
-/* Styling for images inside program containers */
 .program img {
     width: 100%;
-    height: auto; /* Maintain aspect ratio */
-    max-width: 100%; /* Ensure images do not exceed container width */
+    height: auto; 
+    max-width: 100%; 
     border-radius: 10px;
-    display: block; /* Ensure the image is a block element to avoid inline spacing issues */
-    transition: filter 0.3s ease; /* Smooth transition for the blur effect */
+    display: block; 
+    transition: filter 0.3s ease;
 }
 
 /* Styling for caption overlay */
 .caption {
-    position: absolute; /* Position caption absolutely within .program container */
-    top: 50%; /* Center vertically */
-    left: 50%; /* Center horizontally */
-    transform: translate(-50%, -50%); /* Adjust for centering */
-    color: white; /* White text color for contrast */
-    text-align: center; /* Center text inside the caption */
-    padding: 10px; /* Padding for some space around the text */
-    border-radius: 10px; /* Rounded corners for a softer look */
-    width: 80%; /* Adjust width as needed */
-    opacity: 0; /* Initially hide the caption */
-    transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transition for caption visibility and positioning */
+    position: absolute; 
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; 
+    text-align: center; 
+    padding: 10px; 
+    border-radius: 10px;
+    width: 80%; 
+    opacity: 0; 
+    transition: opacity 0.3s ease, transform 0.3s ease; 
 }
 
-/* Show caption and blur image on hover */
 .program:hover img {
-    filter: blur(2px); /* Apply blur effect to the image */
+    filter: blur(2px); 
 }
 
 .program:hover .caption {
-    opacity: 1; /* Show the caption */
-    transform: translate(-50%, -50%) scale(1.1); /* Optional: Slightly scale up the caption to make it pop */
+    opacity: 1; 
+    transform: translate(-50%, -50%) scale(1.1);
 }
 
 .caption p {
@@ -83,54 +76,50 @@
     font-weight: bold;
 }
 
-/* Media Queries */
-
-/* Adjustments for tablets and smaller screens */
 @media (max-width: 1000px) {
     .study-text h1 {
-        font-size: 35px; /* Slightly smaller heading font size */
+        font-size: 35px; 
     }
 
     .study-text p {
-        font-size: 24px; /* Slightly smaller paragraph font size */
+        font-size: 24px; 
     }
 
     .programs {
-        grid-template-columns: repeat(2, 1fr); /* Two columns layout for tablets */
+        grid-template-columns: repeat(2, 1fr); 
     }
 }
 
-/* Adjustments for mobile screens */
 @media (max-width: 768px) {
     .study-text h1 {
-        font-size: 30px; /* Smaller heading font size */
+        font-size: 30px; 
     }
 
     .study-text p {
-        font-size: 20px; /* Smaller paragraph font size */
-        padding: 0 5px; /* Reduced horizontal padding for small screens */
+        font-size: 20px; 
+        padding: 0 5px; 
     }
 
     .programs {
-        grid-template-columns: 1fr; /* Single column layout for mobile */
+        grid-template-columns: 1fr; 
     }
 
     .caption p {
-        font-size: 24px; /* Smaller font size for the caption on mobile */
+        font-size: 24px; 
     }
 }
 
-/* Additional adjustments for very small screens (optional) */
+
 @media (max-width: 480px) {
     .study-text h1 {
-        font-size: 25px; /* Further reduce heading font size */
+        font-size: 25px; 
     }
 
     .study-text p {
-        font-size: 18px; /* Further reduce paragraph font size */
+        font-size: 18px; 
     }
 
     .caption p {
-        font-size: 20px; /* Further reduce caption font size */
+        font-size: 20px; 
     }
 }

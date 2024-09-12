@@ -13,13 +13,12 @@
 .hero {
     width: 100%;
     min-height: 100vh;
-    background-size: cover; /* Use 'cover' to make sure the image covers the element */
+    background-size: cover; 
     background-position: center;
     background-repeat: no-repeat;
     display: flex;
     align-items: center;
     animation: slideBackground 15s infinite; 
-    /* Add padding and box-sizing to ensure content fits well */
     padding: 0 20px;
     box-sizing: border-box;
 }
@@ -28,7 +27,6 @@
     text-align: left;
     max-width: 800px;
     width: 100%;
-    /* Add some padding to the text container for better spacing */
     padding: 20px;
 }
 
@@ -49,15 +47,14 @@
     cursor: pointer;
     border: 0;
     outline: 0;
-    /* Add a transition for a smoother hover effect */
     transition: background-color 0.3s ease;
 }
 
 .butn:hover {
-    background-color: rgb(100, 220, 190); /* Lighter shade on hover */
+    background-color: rgb(100, 220, 190); 
 }
 
-/* Media Queries for Mobile Devices */
+
 @media (max-width: 768px) {
     .hero-text {
         text-align: center;
@@ -65,24 +62,24 @@
     }
 
     .hero-text h1 {
-        font-size: 40px; /* Smaller font size for smaller screens */
+        font-size: 40px;
         margin-bottom: 20px;
     }
 
     .butn {
-        padding: 10px 20px; /* Adjust button padding for mobile screens */
-        font-size: 14px; /* Slightly smaller font size */
+        padding: 10px 20px;
+        font-size: 14px; 
     }
 }
 
 @media (max-width: 480px) {
     .hero-text h1 {
-        font-size: 30px; /* Further decrease font size for very small screens */
+        font-size: 30px; 
         margin-bottom: 15px;
     }
 
     .butn {
-        padding: 8px 15px; /* Adjust button padding for very small screens */
-        font-size: 12px; /* Even smaller font size */
+        padding: 8px 15px; 
+        font-size: 12px; 
     }
 }

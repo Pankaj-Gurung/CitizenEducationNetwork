@@ -2,7 +2,7 @@ nav{
     width: 100%;
     color: white;
     padding: 4px 0;
-    position: fixed;
+    position: fixed; 
     top: 0;
     left: 0;
     display: flex;
@@ -10,10 +10,22 @@ nav{
     justify-content: space-between;
     z-index: 10;
     cursor: pointer;
+    background: #0000003a;
+    transition: transform 0.3s ease; 
+}
+
+
+nav.hide-nav {
+    transform: translateY(-100%);
+}
+
+nav.show-nav {
+    transform: translateY(0);
 }
 
 .logo{
-    width: 60px;
+    width: 150px;
+    margin-bottom: 5px;
 }
 
 nav ul li{
@@ -25,7 +37,7 @@ nav ul li{
 }
 
 nav ul li:hover {
-    transform: scale(1.1); /* Slightly enlarges the list item on hover */
+    transform: scale(1.1); 
 }
 
 .container{
