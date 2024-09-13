@@ -26,6 +26,19 @@
     display: inline-block;
 }
 
+.butn {
+    background: rgb(123, 247, 210);
+    color: rgb(65, 0, 243);
+    font-weight: 600;
+    padding: 14px 25px;
+    font-size: 16px;
+    border-radius: 30px;
+    cursor: pointer;
+    border: 0;
+    outline: 0;
+    transition: background-color 0.3s ease;
+}
+
 /* Media Queries */
 
 /* Tablets */

@@ -6,6 +6,7 @@ import netherlands from '../../assets/netherlands.jpg'
 import sydney from '../../assets/sydney.jpg'
 import uk from '../../assets/uk.jpg'
 import usa from '../../assets/usa.jpg'
+import { Link } from 'react-router-dom'
 
 const Study = () => {
   return (
@@ -17,10 +18,12 @@ const Study = () => {
 
     <div className='programs'>
         <div className='program'>
+           <Link>
             <img src={France} alt="" />
             <div className="caption">
                 <p>Study in France</p>
             </div>
+            </Link>
         </div>
         <div className="program">
             <img src={Germany} alt="" />
@@ -35,10 +38,12 @@ const Study = () => {
             </div>
         </div>
         <div className="program">
+        <Link to='/auslanding' >
             <img src={sydney} alt="" />
             <div className="caption">
                 <p>Study in Australia</p>
             </div>
+            </Link>
         </div>
         <div className="program">
             <img src={uk} alt="" />
