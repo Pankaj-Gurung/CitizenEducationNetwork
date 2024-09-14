@@ -18,7 +18,7 @@ const Study = () => {
 
     <div className='programs'>
         <div className='program'>
-           <Link>
+           <Link to='/francelanding'>
             <img src={France} alt="" />
             <div className="caption">
                 <p>Study in France</p>
@@ -26,16 +26,20 @@ const Study = () => {
             </Link>
         </div>
         <div className="program">
+            <Link to='/germanylanding'>
             <img src={Germany} alt="" />
             <div className="caption">
                 <p>Study in Germany</p>
             </div>
+            </Link>
         </div>
         <div className="program">
+            <Link to='/netherlandslanding'>
             <img src={netherlands} alt="" />
             <div className="caption">
                 <p>Study in Netherlands</p>
             </div>
+            </Link>
         </div>
         <div className="program">
         <Link to='/auslanding' >
@@ -46,19 +50,22 @@ const Study = () => {
             </Link>
         </div>
         <div className="program">
+            <Link to='/uklanding'>
             <img src={uk} alt="" />
             <div className="caption">
                 <p>Study in United Kingdom</p>
             </div>
+            </Link>
         </div>
         <div className="program">
+            <Link to='/usalanding'>
             <img src={usa} alt="" />
             <div className="caption">
                 <p>Study in United States of America</p>
             </div>
+            </Link>
         </div>
-    </div>
-        
+    </div>  
     </div>
   )
 }
