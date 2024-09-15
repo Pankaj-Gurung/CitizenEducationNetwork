@@ -11,11 +11,13 @@ import ChatBot from 'react-simple-chatbot';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Auslanding from './components/Countries/Australia/Auslanding';
 import FranceLanding from './components/Countries/France/FranceLanding';
-import GermanyLanding from './components/Countries/Germany/GermanyLanding';
 import NetherlandsLanding from './components/Countries/Netherlands/NetherlandsLanding';
 import UKLanding from './components/Countries/United Kingdom/UKLanding';
 import USALanding from './components/Countries/United States of America/USALanding';
-import JapanLanding from './components/Countries/Japan/JapanLanding';
+import CanadaLanding from './components/Countries/Canada/CanadaLanding';
+import IrelandLanding from './components/Countries/Ireland/IrelandLanding';
+import SingaporeLanding from './components/Countries/Singapore/SingaporeLanding';
+
 
 const getGreeting = () => {
   const hour = new Date().getHours();
@@ -114,11 +116,12 @@ const App = () => {
         {/* Australia Route */}
         <Route path="/auslanding" element={<Auslanding />} />
         <Route path='/francelanding' element={<FranceLanding/>}/>
-        <Route path='/germanylanding' element={<GermanyLanding/>}/>
+        <Route path='/canadalanding' element={<CanadaLanding/>}/>
         <Route path='/netherlandslanding' element={<NetherlandsLanding/>}/>
         <Route path='/uklanding' element={<UKLanding/>}/>
         <Route path='/usalanding' element={<USALanding/>}/>
-        <Route path='/japanlanding' element={<JapanLanding/>}/>
+        <Route path='/irelandlanding' element={<IrelandLanding/>}/>
+        <Route path='/singaporelanding' element={<SingaporeLanding/>}/>
       </Routes>
     </BrowserRouter>
   );
