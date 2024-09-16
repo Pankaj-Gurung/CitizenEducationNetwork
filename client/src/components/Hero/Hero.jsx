@@ -1,13 +1,13 @@
 import React from 'react'
 import './Hero.css'
-import {Link} from 'react-scroll'
+import {Link} from 'react-router-dom'
 
 const Hero = () => {
   return (
     <div className='hero container'>
         <div className='hero-text'>
         <h1>The only Education Consultancy you need!</h1>
-        <Link to='contact' smooth={true} offset={0} duration={500} className='butn'>Contact us</Link>
+        <Link to='/aboutus'>View More</Link>
         </div>
         </div>
   )

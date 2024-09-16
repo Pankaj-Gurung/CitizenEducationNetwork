@@ -18,6 +18,8 @@ import CanadaLanding from './components/Countries/Canada/CanadaLanding';
 import IrelandLanding from './components/Countries/Ireland/IrelandLanding';
 import SingaporeLanding from './components/Countries/Singapore/SingaporeLanding';
 
+import Aboutus from './components/Aboutus/Aboutus';
+
 
 const getGreeting = () => {
   const hour = new Date().getHours();
@@ -113,6 +115,7 @@ const App = () => {
       <Routes>
         {/* Home Route */}
         <Route path="/" element={<HomePage />} />
+        <Route path='/aboutus' element={<Aboutus/>}/>
         {/* Australia Route */}
         <Route path="/auslanding" element={<Auslanding />} />
         <Route path='/francelanding' element={<FranceLanding/>}/>
