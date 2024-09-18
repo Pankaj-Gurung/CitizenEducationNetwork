@@ -1,4 +1,5 @@
 import React from 'react'
+import './Netherlands.css'
 
 const NetherlandsLanding = () => {
   return (

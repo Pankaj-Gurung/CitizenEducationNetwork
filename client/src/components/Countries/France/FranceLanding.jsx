@@ -1,4 +1,5 @@
 import React from 'react'
+import './FranceLanding.css'
 
 const FranceLanding = () => {
   return (

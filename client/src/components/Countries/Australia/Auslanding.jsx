@@ -1,4 +1,5 @@
 import React from 'react'
+import './Auslanding.css'
 
 const Auslanding = () => {
   return (
